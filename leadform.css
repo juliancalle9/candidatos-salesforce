@@ -1,0 +1,231 @@
+body{
+    font-family: 'Silka', 'Helvetica Neue', system-ui, -apple-system;
+    margin: 0px;
+}
+
+abbr{
+    color:#f23a3c;
+}
+
+fieldset{
+    border: none;
+}
+
+.banner{
+    
+}
+
+.form-maestro{
+
+}
+
+.img-sf {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
+    height: auto; /* Ajusta la altura proporcionalmente para mantener la relación de aspecto */
+}
+
+fieldset, #titulo-form{
+    border-bottom: 2px dotted #0CB0E4;
+}
+
+form{
+    background-color: #FFFFFF;
+    filter: drop-shadow(-1px -1px #F5F8FA) drop-shadow(0 1px #F1F5F8) drop-shadow(0 1px #EEF3F7) drop-shadow(0 1px #EAF0F5) drop-shadow(1px 1px #E3EBF1) drop-shadow(1px 1px #DCE6EE) drop-shadow(1px 1px #D1DFE9) drop-shadow(1px 1px #CDDBE6) drop-shadow(0px 0px 8px rgba(128, 145, 160, 0.5));
+    border: 1px solid #EEF2F6;
+    margin: 60px auto;
+    
+}
+
+
+h3{
+    background: url("https://www.e-volution.co/wp-content/themes/yootheme/css/images/polygons-title.svg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: contain;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+input, select{
+    border: 1px solid #b8cddc;
+    color: #2c3345;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 100%;
+    height: 32px;
+    margin-bottom: 15px;
+    padding: 4px;
+    
+}
+
+label{
+    color: #5F707F;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+legend{
+    color: #0075d2;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.archivo-hv{
+    border: none;
+}
+
+.area-boton{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-enviar, legend, label, h2{
+    text-transform: uppercase;
+}
+
+.boton-enviar{
+    background: #023E8A;
+    border: 2px solid #118CD5;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 50px;
+    margin: 20px;
+}
+
+.fondo-azul{
+    background-image: repeating-radial-gradient(circle at top center, transparent 0, rgba(12, 176, 228, .25) 160px),
+    repeating-linear-gradient(#41FBFF, #1CC8EA);
+    background-color: #118CD5;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px 10px 20px;
+}
+
+.boton-enviar{
+    color: #FFFFFF;
+}
+
+#titulo-aspira, #experiencia-laboral, #lead_source, .check{
+    display: none;
+}
+
+#titulo-form{
+    color: #023E8A;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 15px;
+}
+
+@media (min-width: 460px){
+    #infoper{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #infocon{
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    #infoaca{
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    #infolab{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 768px){
+    #infoper{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #infocon{
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    #infoaca{
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    #infolab{
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+}
+
+@media (min-width: 1279px){
+    
+    fieldset{
+        margin: 15px 0px;
+    }
+    
+    .banner{
+        width: 100%; /* La imagen ocupará el 100% del ancho disponible dentro del formulario */
+        height: auto;
+    }
+
+    .form-maestro{
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: -60px;
+    }
+    
+    form{
+        width: 60%;
+    }
+    
+    h3{
+        font-size: 34px;
+    }
+
+    input, select{
+        width: 250px;
+        padding-left: 15px;
+    }
+    
+    #infoper{
+        padding-left: 60px;
+        padding-right: 40px;
+    }
+    #infocon{
+        padding-right: 60px;
+        padding-left: 40px;
+    }
+    #infoaca{
+        padding-left: 60px;
+        padding-right: 40px;
+    }
+    #infolab{
+        padding-right: 60px;
+        padding-left: 40px;
+    }
+    #titulo-form{
+        font-size: 18px;
+    }
+    
+    
+    .seccion-1, .seccion-2{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
+
+    
+}

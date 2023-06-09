@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="leadform.css">
+    <link rel="shortcut icon" href="https://www.e-volution.co/wp-content/themes/yootheme/cache/evo-favicon-540-d0a4e1f9.png" type="image/x-icon">
+    <title>Registration form</title>
+</head>
+<body>
+    <div class="fondo-azul">
+        <form id="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" >
+            <div class="banner">
+                <img class="img-sf" src="form-jobs.png" alt="Logo Salesforce">
+            </div>
+            
+            <div class="form-maestro" id="formulario">
+                
+                <input id="oid" type=hidden name="oid" value="00DDn000004Lt5Y">
+                <input id="retURL" type=hidden name="retURL" value="https://www.e-volution.co/es/somos-diseno-desarrollo-tecnologia/">
+                <select id="recordType"name="recordType" class="check">
+                    <option id="tipoRegistro-Id" value=""></option>
+                </select>  
+                <input  id="00NDn00000FTSmW" name="00NDn00000FTSmW" type="checkbox" value="1" checked class="check"/>
+                <select  id="lead_source" name="lead_source">
+                    <option value="">Choose</option>
+                    <option value="Web" selected = "true">Web</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input  id="company" maxlength="40" name="company" size="20" type="text" value="E-volution" class="check"/>
+                <select  id="Campaign_ID" name="Campaign_ID" class="check">
+                    <option id="campania-Id" value=""></option>
+                </select>
+                <section class="seccion-1">
+                    <fieldset id="infoper">
+                        <legend>Personal Information</legend>
+                        <label for="first_name">Name</label>
+                        <br>
+                        <input  id="first_name" maxlength="40" name="first_name" size="20" type="text"  required/><br>
+                
+                        <label for="last_name">Lastname</label>
+                        <br>
+                        <input  id="last_name" maxlength="80" name="last_name" size="20" type="text"  required/><br>
+            
+                        <label for="00NDn00000FTR2t">Type of ID</label>
+                        <br>
+                        <select  id="00NDn00000FTR2t" name="00NDn00000FTR2t" title="Tipo de Identificación" required>
+                            <option value="">Choose</option>
+                            <option value="Tarjeta de Identidad">Identity Card</option>
+                            <option value="Cédula de Ciudadanía">Citizenship Card</option>
+                            <option value="Cédula de Extranjería">Foreigner ID</option>
+                        </select><br>
+            
+                        <label for="00NDn00000FTR2y">ID Number</label>
+                        <br>
+                        <input  id="00NDn00000FTR2y" maxlength="20" name="00NDn00000FTR2y" size="20" type="number" required/><br>
+            
+                        <label for="fecha-nacimiento">Date of birth</label>
+                        <br>
+                        <input id="fecha-nacimiento" type="date" class="fecha-elegida" required>
+
+                        <span class="dateInput dateOnlyInput">
+                            <input  id="00NDn00000FTTBH" name="00NDn00000FTTBH" size="12" type="text" class="check"/>
+                        </span><br>
+                        
+
+                    </fieldset>
+                    <fieldset id="infocon">
+                        <legend>Contact information</legend>
+                        <label for="email">Email</label>
+                        <br>
+                        <input  id="email" maxlength="80" name="email" size="20" type="email" required/><br>
+                        
+            
+                        <label for="phone">Phone</label>
+                        <br>
+                        <input  id="phone" maxlength="40" name="phone" size="20" type="tel" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required/><br>
+                
+                        <label for="00NDn00000FTrRm">Residence department</label>
+                        <br>
+                        <select  id="00NDn00000FTrRm" name="00NDn00000FTrRm" title="Departamento de residencia" required onchange="cargarCiudades();">
+                            <option value="">Choose</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Antioquia">Antioquia</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Atlántico">Atlántico</option>
+                            <option value="Bogotá D.C.">Bogotá D.C.</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Boyacá">Boyacá</option>
+                            <option value="Caldas">Caldas</option>
+                            <option value="Caquetá">Caquetá</option>
+                            <option value="Casanare">Casanare</option>
+                            <option value="Cauca">Cauca</option>
+                            <option value="Cesar">Cesar</option>
+                            <option value="Chocó">Chocó</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cundinamarca">Cundinamarca</option>
+                            <option value="Guainía">Guainía</option>
+                            <option value="Guaviare">Guaviare</option>
+                            <option value="Huila">Huila</option>
+                            <option value="La Guajira">La Guajira</option>
+                            <option value="Magdalena">Magdalena</option>
+                            <option value="Meta">Meta</option>
+                            <option value="Nariño">Nariño</option>
+                            <option value="Norte de Santander">Norte de Santander</option>
+                            <option value="Putumayo">Putumayo</option>
+                            <option value="Quindío">Quindío</option>
+                            <option value="Risaralda">Risaralda</option>
+                            <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Sucre">Sucre</option>
+                            <option value="Tolima">Tolima</option>
+                            <option value="Valle del Cauca">Valle del Cauca</option>
+                            <option value="Vaupés">Vaupés</option>
+                            <option value="Vichada">Vichada</option>
+                        </select><br>
+                            
+                
+                        <label for="00NDn00000FUJYt">Residence City</label>
+                        <br>
+                        <select name="00NDn00000FUJYt" id="00NDn00000FUJYt" required title="Ciudad de residencia">
+                            
+                        </select><br>
+                        <label for="00NDn00000J9CQa">wage aspiration</label>
+                        <br>
+                        <input  id="00NDn00000J9CQa" maxlength="20" name="00NDn00000J9CQa" size="20" type="number" /><br>
+
+                    </fieldset>
+                </section>
+                <section class="seccion-2">
+                    <fieldset id="infoaca">
+                        <legend>Academic information</legend>
+                        <label for="00NDn00000FTSEH">Level of education</label>
+                        <br>
+                        <select  id="00NDn00000FTSEH" name="00NDn00000FTSEH" title="Nivel de escolaridad" required>
+                            <option value="">Choose</option>
+                            <option value="Bachiller">Bachelor</option>
+                            <option value="Técnico">Technician</option>
+                            <option value="Tecnólogo">Technologist</option>
+                            <option value="Profesional">Professional</option>
+                            <option value="Especialización">Specialization</option>
+                            <option value="Maestría">Master's Degree</option>
+                            <option value="Doctorado">Doctorate</option>
+                        </select><br>
+            
+                        <label for="00NDn00000FTSEb">Title you acquired</label>
+                        <br>
+                        <input  id="00NDn00000FTSEb" maxlength="80" name="00NDn00000FTSEb" size="20" type="text" required/><br>
+            
+                        <label for="00NDn00000FTSHV">Educational Institution</label>
+                        <br>
+                        <input  id="00NDn00000FTSHV" maxlength="80" name="00NDn00000FTSHV" size="20" type="text" required/><br>
+            
+                        <label for="00NDn00000FTTMv">Are you currently studying?</label>
+                        <br>
+                        <select  id="00NDn00000FTTMv" name="00NDn00000FTTMv" title="¿Actualmente está estudiando?" required onchange="mostrarEducActual();">
+                            <option value="">Choose</option>
+                            <option value="SI">Yes</option>
+                            <option value="No">No</option>
+                        </select><br>
+
+                        <div id="titulo-aspira">
+                            <label for="00NDn00000FTTR8">Title to which you aspire</label>
+                            <br>
+                            <input  id="00NDn00000FTTR8" maxlength="255" name="00NDn00000FTTR8" size="20" type="text" class="campo-requerido"/><br>
+                        
+                            <label for="00NDn00000FTd1C">Where are you studying?</label>
+                            <br>
+                            <input  id="00NDn00000FTd1C" maxlength="255" name="00NDn00000FTd1C" size="20" type="text" class="campo-requerido"/><br>
+                
+                            <label for="00NDn00000FTTRD">What level or semester are you in?</label>
+                            <br>
+                            <select  id="00NDn00000FTTRD" name="00NDn00000FTTRD" title="Nivel actual" class="campo-requerido">
+                                <option value="">Choose</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select><br>
+                        </div>
+            
+                        <label for="00NDn00000FTTZx">What is your level of English?</label>
+                        <br>
+                        <select  id="00NDn00000FTTZx" name="00NDn00000FTTZx" title="Nivel de inglés" required>
+                            <option value="">Choose</option>
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                            <option value="C1">C1</option>
+                            <option value="C2">C2</option>
+                        </select><br>
+                    </fieldset>
+                    <fieldset id="infolab">
+                        <legend>Employment information</legend>
+
+                        <label for="00NDn00000J9CY6">What type of linkage are you looking for?</label>
+                        <br>
+                        <select  id="00NDn00000J9CY6" name="00NDn00000J9CY6" title="Tipo de vinculación que busca">
+                            <option value="">Choose</option>
+                            <option value="Freelance">Freelance</option>
+                            <option value="Tiempo completo">Full time</option>
+                            <option value="Medio tiempo">Half time</option>
+                        </select><br>
+                            
+                        <label for="00NDn00000J9CcY">What is your preferred work modality?</label>
+                        <br>
+                        <select  id="00NDn00000J9CcY" name="00NDn00000J9CcY" title="Modalidad de trabajo" required>
+                            <option value="">Choose</option>
+                            <option value="Presencial">On-site</option>
+                            <option value="Virtual">Virtual</option>
+                            <option value="Híbrido">Hybrid</option>
+                        </select><br>
+                        
+                        <label for="00NDn00000FTTja">Do you have work experience?</label>
+                        <br>
+                        <select  id="00NDn00000FTTja" name="00NDn00000FTTja" title="¿Tiene experiencia laboral?" onchange="mostrarExpLaboral();" required>
+                            <option value="">Choose</option>
+                            <option value="SI">Yes</option>
+                            <option value="No">No</option>
+                        </select><br>
+                        <div id="experiencia-laboral">
+                            <label for="00NDn00000FTTsi">Name of the company</label>
+                            <br>
+                            <input  id="00NDn00000FTTsi" maxlength="255" name="00NDn00000FTTsi" size="20" type="text" class="limpia-campos"/><br>
+                        
+                            <label for="title">Position</label>
+                            <br>
+                            <input  id="title" maxlength="255" name="title" size="20" type="text" class="limpia-campos"/><br>
+                
+                            <label for="00NDn00000FTTtg">Immediate supervisor</label>
+                            <br>
+                            <input  id="00NDn00000FTTtg" maxlength="255" name="00NDn00000FTTtg" size="20" type="text" onkeypress="return ((event.charCode == 32) || (event.charCode == 209) || (event.charCode == 241) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" class="limpia-campos"/><br>
+                
+                            <label for="fecha-inicio">Starting date</label>
+                            <br>
+                            <input id="fecha-inicio" type="date"  class="fecha-elegida limpia-campos">
+                            <span class="dateInput dateOnlyInput">
+                                <input  id="00NDn00000FTUFZ" name="00NDn00000FTUFZ" size="12" type="text" class="check limpia-campos" />
+                            </span><br>
+                
+                            <label for="fecha-finalizacion">Completion date</label>
+                            <br>
+                            <input id="fecha-finalizacion" type="date" class="fecha-elegida limpia-campos" >
+
+                            <span class="dateInput dateOnlyInput">
+                                <input  id="00NDn00000FTUJw" name="00NDn00000FTUJw" size="12" type="text" class="check limpia-campos"/>
+                            </span><br>
+
+                            <label for="00NDn00000FTTsx">Name of the company</label>
+                            <br>
+                            <input  id="00NDn00000FTTsx" maxlength="255" name="00NDn00000FTTsx" size="20" type="text" class="limpia-campos"/><br>
+                    
+                            <label for="00NDn00000FTTtb">Position</label>
+                            <br>
+                            <input  id="00NDn00000FTTtb" maxlength="255" name="00NDn00000FTTtb" size="20" type="text" class="limpia-campos"/><br>
+                            
+                            <label for="00NDn00000FTU75">Immediate supervisor</label>
+                            <br>
+                            <input  id="00NDn00000FTU75" maxlength="255" name="00NDn00000FTU75" size="20" type="text" onkeypress="return ((event.charCode == 32) || (event.charCode == 209) || (event.charCode == 241) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" class="limpia-campos"/><br>
+                    
+                            <label for="fecha-inicio2">Starting date</label>
+                            <br>
+                            <input id="fecha-inicio2" type="date" class="fecha-elegida limpia-campos">
+                            <span class="dateInput dateOnlyInput">
+                                <input  id="00NDn00000FTUJr" name="00NDn00000FTUJr" size="12" type="text" class="check limpia-campos"/>
+                            </span><br>
+                    
+                            <label for="fecha-finalizacion2">Completion date</label>
+                            <br>
+                            <input id="fecha-finalizacion2" type="date" class="fecha-elegida limpia-campos">
+                            <span class="dateInput dateOnlyInput">
+                                <input  id="00NDn00000FTUK6" name="00NDn00000FTUK6" size="12" type="text" class="check limpia-campos"/>
+                            </span><br>
+                        </div>
+                        <br>
+                        <!--
+                        <label for="archivo">Adjuntar hoja de vida</label>
+                        <input class= "archivo-hv" id = "archivo"  name="archivo" type="file" accept=".pdf" onchange="archivoTexto();">
+                        <input id="00NDn00000J9QXX" name="00NDn00000J9QXX" type="text" class="check">
+                        -->
+
+                    </fieldset>
+                </section>
+                <div class="area-boton">
+                    <!--<button id="submit-button" name="submit" class="boton-enviar" type="button">Enviar</button>
+                    <input id="submit-button" class="boton-enviar" type="submit" name="submit" value="Enviar">
+                    <button type="button" id="submit-button" onclick="postLeadToSFDC()" class="boton-enviar">Enviar</button>-->
+                    <input  class="boton-enviar" type="submit" name="submit" value="Submit" >
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const product = urlParams.get('campain');
+        document.getElementById("campania-Id").value = product;
+
+        const tipo = urlParams.get('tipo');
+        let tipoRegistro;
+      
+        switch (tipo){
+            case '1':
+                tipoRegistro = '012Dn0000005rYg';
+                break;
+                
+            case '2':
+                tipoRegistro = '012Dn0000006KNB';
+                break;
+        }
+        document.getElementById("tipoRegistro-Id").value = tipoRegistro;
+    </script>
+    <script src="leadform.js"></script>   
+
+</body>
+</html>   
